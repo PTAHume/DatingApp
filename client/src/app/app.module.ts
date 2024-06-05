@@ -3,10 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { provideHttpClient } from '@angular/common/http';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-
-
 
 @NgModule({
   declarations: [
@@ -14,9 +10,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
-  providers: [provideHttpClient(), provideAnimationsAsync()],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
